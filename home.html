@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Izhaan's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 255, 255, 0.7); /* Cyan glow effect */
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #00ffff;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+        }
+
+        p {
+            color: #ddd;
+        }
+
+        .skills {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .skill {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .skill label {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .skill-bar-container {
+            background-color: #eaeaea;
+            border-radius: 5px;
+            height: 20px;
+            overflow: hidden;
+        }
+
+        .skill-bar {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+
+        .html { background-color: #e44d26; width: 0%; }
+        .css { background-color: #264de4; width: 0%; }
+        .js { background-color: #f7df1e; width: 0%; }
+        .php { background-color: #4F5B93; width: 0%; }
+        .python { background-color: #306998; width: 0%; }
+
+        .services-list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7); /* Full cyan glow */
+        }
+
+        .service {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .projects {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            color: #00ffff;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Cyan glow for heading */
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .project h3 {
+            color: #00ffff;
+        }
+
+        .project p {
+            color: #ddd;
+        }
+
+        .button-container {
+            margin-top: 20px;
+         align-items: center;
+         align-content: center;
+         text-align: center;
+        }
+
+        .button {
+            background-color: #0dcef0;
+            color: rgb(14, 11, 11);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+            text-align: center;
+     
+        }
+
+
+        .button:hover {
+            background-color: #3a4b73;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, I am Izhan</h1>
+        <p>Web and Python Developer</p>
+        
+        <div class="skills">
+            <div class="skill">
+                <label>HTML</label>
+                <div class="skill-bar-container">
+                    <div class="skill-bar html"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>CSS</label>
+                <div class="skill-bar-container">
+                    <div class="skill-bar css"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>JavaScript</label>
+                <div class="skill-bar-container">
+                    <div class="skill-bar js"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>PHP</label>
+                <div class="skill-bar-container">
+                    <div class="skill-bar php"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>Python</label>
+                <div class="skill-bar-container">
+                    <div class="skill-bar python"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-list">
+            <div class="service"><i class="fas fa-code"></i><h3>Web Development</h3><p>Creating responsive websites.</p></div>
+            <div class="service"><i class="fas fa-mobile-alt"></i><h3>Mobile App Development</h3><p>Designing mobile applications.</p></div>
+            <div class="service"><i class="fas fa-database"></i><h3>Database Management</h3><p>Handling databases efficiently.</p></div>
+            <div class="service"><i class="fas fa-code"></i><h3>Python Development</h3><p>Web Applications using Python.</p></div>
+            <div class="service"><i class="fas fa-bug"></i><h3>Bug Fixing</h3><p>Debugging and resolving issues.</p></div>
+            <div class="service"><i class="fas fa-cogs"></i><h3>API Development</h3><p>Creating and managing APIs.</p></div>
+        </div>
+
+ <div class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>QR Code generator</h3>
+                <p>A simple python based QR code generator. allows user to generate QR Code for a url or text</p>
+            </div>
+            <div class="project">
+                <h3>Google Data Scrapper</h3>
+                <p>When user searches for a query, website performs a search across google and shows results from the Top 5 websites, with url's.</p>
+            </div>
+            <div class="project">
+                <h3>Izhy AI</h3>
+                <p>Chatbot based on meta's llama Dataset, uses python and javaScript as backend</p>
+            </div>
+            <div class="project">
+                <h3>Video Confrence Web</h3>
+                <p>A simpe video confrencing website that creates a meeting url, which when can be shared to others so they can join too.</p>
+            </div>
+            <div class="project">
+                <h3>Keywords generator (SEO)</h3>
+                <p>Uses python to generate keywords, which can be used for SEO, also it has pre-trained keywords</p>
+            </div>
+            <div class="project">
+                <h3>Chat-room</h3>
+                <p>A python based chat app which other users can access and chat with people accessing the website</p>
+            </div>
+            <div class="project">
+                <h3>To-Do App</h3>
+                <p>html, css and js combined web app which is a task list (to-do) app</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="button-container">
+            <a href="mailto:mohammadizhan710@gmail.com" class="button">Contact Me</a>
+            <a href="https://github.com/Muhammad-izhaan?tab=repositories" class="button">View More Projects</a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.html').style.width = '87%';
+            document.querySelector('.css').style.width = '82%';
+            document.querySelector('.js').style.width = '69%';
+            document.querySelector('.php').style.width = '60%';
+            document.querySelector('.python').style.width = '70%';
+        }
+    </script>
+</body>
+</html>
+
+
+
+       
